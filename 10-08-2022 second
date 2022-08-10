@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+int r,n,sum=0,k;
+scanf("%d",&n);
+k=n;
+while(n>0){
+    r=n%10;
+    sum=sum+r;
+    n=n/10;
+}
+if(k%sum==0){
+    printf("harshad number");
+}
+else{
+    printf("not harshad number");
+}
+    return 0;
+}
