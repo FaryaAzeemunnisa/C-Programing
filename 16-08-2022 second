@@ -1,0 +1,26 @@
+
+#include <stdio.h>
+int main() {
+    int i,j;
+    int count;
+    int arr[10];
+    printf("enter numbers");
+    for(i=0;i<=3;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(i=3;i<=0;i--){
+        count=0;
+        if(arr[i]!=1){
+        for(j=2;j<arr[i];j++){
+            if(arr[i]%j==0){
+                count=1;
+                break;
+            }
+        }
+        }
+        if(count==0){
+            printf("%d",arr[i]);
+        }
+    }
+    return 0;
+}
