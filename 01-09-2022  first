@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int a,answer;
+    scanf("%d",&a);
+    answer=even_or_odd(a);
+    if(answer==0){
+        printf("EVEN");
+    }
+    else 
+    printf("ODD");
+}
+int even_or_odd(int x){
+    if(x%2==0)
+    return 0;
+    else 
+    return 1;
+}
