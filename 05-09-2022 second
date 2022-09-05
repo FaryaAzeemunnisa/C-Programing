@@ -1,0 +1,26 @@
+#include<stdio.h>
+void seq(int x[],int s,int e);
+int main()
+{
+	int a[100];
+	int n,i;
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	int l=n-1;
+	seq(a,0,l);
+}
+void seq(int x[],int s,int e)
+{
+	if(s>e)
+	{
+		return;
+	}
+	else
+	{
+		printf("%d\n",x[s]);
+		seq(x,s+1,e);
+	}
+}
