@@ -1,0 +1,17 @@
+units=int(input('Enter number of unit consumed: '))
+if(units>0 and units<=100):
+    amt=units*1.9
+    fc=25.00
+elif(units>100 and units<=200):
+    amt=(100*1.9)+(units-100)*6.00
+    fc=50.00
+elif(units>200 and units<=300):
+    amt=(100*1.5)+(200-100)*6+(units-200)*8.75
+    fc=55.00
+elif(units>300):
+    amt=2500
+    fc=75.00
+else:
+    amount=0;
+    total= amt+fc;
+    print('Electicity bill=',total)
